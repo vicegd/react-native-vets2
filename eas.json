@@ -1,0 +1,12 @@
+{
+  "build": {
+    "simulator": {
+      "ios": {
+        "simulator": true
+      }
+    },
+    "production": {}
+  }
+}
+
+  

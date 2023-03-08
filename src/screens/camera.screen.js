@@ -37,13 +37,13 @@ export const CameraScreen = ({ navigation }) => {
   }
 
   return (
-    <CameraContainer onPress={takePicture}>
-      <CameraView
-        type={CameraType.front}
-        ref={(ref) => {
-          cameraRef = ref;
-        }}
-      />
-    </CameraContainer>
+    <CameraView
+      type={CameraType.front}
+      ref={(ref) => {
+        cameraRef = ref;
+      }}
+    >
+      <CameraContainer onPressIn={takePicture} />
+    </CameraView>
   );
 };
